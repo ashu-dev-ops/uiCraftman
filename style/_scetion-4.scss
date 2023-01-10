@@ -1,0 +1,173 @@
+.section-4 {
+    width: 100%;
+    height: 150vh;
+    background-color: #010100;
+    padding: 1vw;
+
+    .big-button {
+        height: 45%;
+        width: 100%;
+        background-color: #fffefe;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+            width: 30vw;
+        }
+    }
+    .small-button {
+        height: 25%;
+        width: 100%;
+        // background-color: antiquewhite;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 10vw;
+            // background-color: red;
+        }
+    }
+
+    .r-1 {
+        // background-color: lawngreen;
+        border-radius: 50px;
+        display: flex;
+        .r-1-r {
+            background-color: #031f22;
+            width: 50%;
+            border-radius: 50px;
+            margin: 5px 5px;
+            height: 100%;
+            transition: all 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .small-main-img {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // background-color: red;
+                img {
+                    width: 8vw;
+                }
+            }
+
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+        .r-1-l {
+            background-color: #cbe4fe;
+            width: 50%;
+            border-radius: 50px;
+            margin: 5px 5px;
+            height: 100%;
+            transition: all 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .small-main-img {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // background-color: red;
+
+                img {
+                    width: 14vw;
+                }
+            }
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+    }
+    .r-2 {
+        // background-color: burlywood;
+        border-radius: 50px;
+        display: flex;
+        .r-2-r {
+            background-color: #280039;
+            width: 50%;
+            border-radius: 50px;
+            margin: 5px 5px;
+            height: 100%;
+            transition: all 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .small-main-img {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 12vw;
+                }
+            }
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+        .r-2-l {
+            background-color: #d1ff95;
+            width: 50%;
+            border-radius: 50px;
+            margin: 5px 5px;
+            height: 100%;
+            transition: all 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .small-main-img {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: red;
+                img {
+                    width: 20vw;
+                    background-color: red;
+                }
+            }
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    .big-upper-row {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1vw;
+        font-size: 1.5vw;
+    }
+    .big-lower-row {
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1vw;
+        font-size: 1.5vw;
+        i{
+            font-size: 2vw;
+        }
+    }
+}

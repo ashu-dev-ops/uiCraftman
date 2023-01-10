@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.hidden{
+    opacity: 0;
+}
+.main {
+    overflow-x: hidden;
+    background-color: black;
+    // min-height: 100vh;
+}
+body {
+    background-color: black;
+}
+@import "header";
+@import "section-2";
+@import "section-3";
+@import "scetion-4";
+@import "section-5";
+@import "section-6";
+@import "section-7";
+#mian {
+    min-height: 100vh;
+}

@@ -1,0 +1,115 @@
+.section-5 {
+    min-height: 120vh;
+    width: 100%;
+    background-color: #1f1a1c;
+    border-radius: 80px;
+    position: relative;
+    padding: 1vw;
+    overflow: hidden;
+    color: #feafd8;
+
+    .textani-5 {
+        position: absolute;
+        white-space: nowrap;
+        overflow-x: visible;
+        overflow-y: hidden;
+        opacity: 1;
+        h1 {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 10vw;
+            font-weight: 500;
+
+            animation-name: ani;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+    div.para {
+        // background-color: red;
+        width: 60%;
+        // padding: 15vw 5vw;
+        padding-top: 30vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+         p {
+            font-size: 2vw;
+        }
+    }
+    .slider {
+        height: 65vh;
+        width:90vw;
+        margin-left: 30%;
+        transform: rotate(-45deg);
+        // background-color: blue;
+        display: flex;
+        flex-direction: column;
+        // gap: 1vw;
+        .slider-row-one {
+            height: 50%;
+            width: 100%;
+            // background-color: red;
+            display: flex;
+
+            overflow-x: scroll;
+            white-space: nowrap;
+            position: relative;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .s-img {
+                flex-shrink: 0;
+                height: 15vmax;
+                width: 15vmax;
+                border: solid 2px gold;
+                // display: inline-block;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+
+                img {
+                    height: 15vmax;
+                    width: 15vmax;
+                    object-fit: cover;
+                }
+            }
+        }
+        .slider-row-two {
+            height: 50%;
+            width: 100%;
+            // background-color: purple;
+            display: inline-block;
+            overflow-x: scroll;
+
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .b-img {
+                height: 15vmax;
+                width: 15vmax;
+                border: solid 2px gold;
+                display: inline-block;
+                border-radius: 50%;
+                border: solid 3px #feafd8;
+                overflow: hidden;
+                flex-shrink: 0;
+
+                img {
+                    height: 15vmax;
+                    width: 15vmax;
+                    background-color: yellow;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

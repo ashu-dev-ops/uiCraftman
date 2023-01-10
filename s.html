@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: red;
+        overflow: hidden;
+        /* overflow-x: auto; */
+      }
+      .scroll-div {
+        /* display: flex; */
+        /* display: inline-block; */
+        position: absolute;
+        white-space: nowrap;
+        overflow-x: visible;
+        overflow-y: hidden;
+        top: 5%;
+        height: 100px;
+        width: 100vw;
+      }
+      .scroll-div::-webkit-scrollbar {
+        display: none;
+      }
+      .scroll-div h1 {
+        display: inline-block;
+        margin-right: 20px;
+        animation-name: ani;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes ani {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(calc(-250% - 20px));
+        }
+      }
+      .container-2 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: orange;
+      }
+      .content {
+        display: flex;
+        width: 100%;
+        background-color: purple;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .content-1 {
+        width: 50vw;
+        background-color: red;
+        z-index: 3;
+        transition: all 2s;
+      }
+      .content-2 {
+        width: 50vw;
+        background-color: blue;
+        position: absolute;
+        transition: all 2s;
+      }
+      img {
+        width: 20vw;
+      }
+      /* div {
+        height: 10vmax;
+        width: 10vmax;
+        background-color: red;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform :scale(3)
+      } */
+      .a {
+        height: 20vh;
+        width: 20vw;
+        border: solid 5px black;
+      }
+      .b {
+        height: 20vh;
+        width: 80vw;
+        background-color: aqua;
+        position: absolute;
+        clip-path: ellipse(25% 40% at 50% 50%);
+        top: 100%;
+        transition: all 1s;
+        width: 100%;
+      }
+      .parent {
+        height: 20vh;
+        background-color: red;
+        width: 20vw;
+        position: relative;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- <div class="a"></div> -->
+      <div class="b"></div>
+    </div>
+    <!-- <div class="container">
+      <img src="" alt="" />
+      <div class="scroll-div">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="content">
+        <div class="content-1">
+          <h1>absolute</h1>
+        </div>
+        <div class="content-2">
+          \ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam,
+          provident.
+        </div>
+      </div>
+    </div> -->
+    <script>
+      console.log("hi");
+      const a = document.querySelector(".a");
+      const b = document.querySelector(".b");
+      const parent = document.querySelector(".parent");
+      parent.addEventListener("mouseenter", () => {
+        console.log("ob");
+        b.style.top = "0%";
+      });
+      parent.addEventListener("mouseleave", () => {
+        console.log("ob");
+        b.style.top = "-100%";
+      });
+
+      // const d = document.querySelector("div")
+      // console.log(d);
+      // d.addEventListener("click",()=>{
+      //   d.style.backgroundColor="black"
+      // })
+      // const r = document.querySelector(".c");
+      // const c = document.querySelector(".content");
+      // const c1 = document.querySelector(".content-1");
+      // const c2 = document.querySelector(".content-2");
+      // c1.addEventListener("click", () => {
+      //   c2.style.transform = "translate(-50%)";
+      //   c1.style.transform = "translate(50%)";
+      // });
+      // r.addEventListener("click", () => {
+      //   r.style.transform = "scale(2)";
+      //   r.style.backgroundColor = "red";
+      // });
+    </script>
+  </body>
+</html>

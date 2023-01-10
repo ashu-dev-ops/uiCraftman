@@ -1,0 +1,119 @@
+.section-6 {
+    height: 120vh;
+    width: 100%;
+    background-color: #1d1d17;
+    border-radius: 50px;
+    padding: 1vw;
+
+    .upper {
+        height: 65%;
+        width: 100%;
+        // background-color: red;
+        padding-right: 25vw;
+        > p {
+            font-size: 2vw;
+            color: #d4c850;
+        }
+        h2 {
+            font-size: 6vw;
+            color: #d4c850;
+        }
+    }
+    .lower {
+        .lower-row-1 {
+            display: flex;
+            width: 50%;
+            gap: 1vw;
+            // background-color: darkgoldenrod;
+            margin-bottom: 1vw;
+            .lower-btn-1 {
+                width: 50%;
+                padding: 0.3vw 2vw;
+                background-color: #1d1d17;
+                border-radius: 20px;
+                border: solid 5px darkgoldenrod;
+                color: #fef481;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5vw;
+            }
+            .lower-btn-2 {
+                width: 50%;
+                padding: 0.3vw 2vw;
+                background-color: #1d1d17;
+                border-radius: 20px;
+                color: #fef481;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: solid 5px darkgoldenrod;
+                font-size: 1.5vw;
+            }
+        }
+        .lower-row-2 {
+            display: flex;
+            gap: 1vw;
+            width: 60%;
+            // .lower-btn-3 {
+            //     width: 26%;
+            //     padding: 1vw 2vw;
+            //     background-color: burlywood;
+            //     border-radius: 50px;
+            //     border: solid 5px darkgoldenrod;
+            // }
+            .lower-btn-4 {
+                width: 26%;
+                padding: 1vw 2vw;
+                background-color: burlywood;
+                border-radius: 50px;
+                border: solid 5px darkgoldenrod;
+            }
+            .lower-btn-5 {
+                width: 26%;
+                padding: 1vw 2vw;
+                background-color: burlywood;
+                border-radius: 50px;
+                border: solid 5px darkgoldenrod;
+            }
+        }
+    }
+}
+// .s-6-button {
+//     padding: 1vw 2vw;
+//     background-color: burlywood;
+// }
+.lower-btn-3 {
+    width: 26%;
+    cursor: pointer;
+
+    // background-color: burlywood;
+    border-radius: 50px;
+    border: solid 2px darkgoldenrod;
+    height: 8vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    .flow {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        height: 100%;
+        width: 100%;
+        top: -100%;
+        background-color: #fef481;
+        transition: all 301ms;
+        align-items: center;
+        p {
+            color: #1d1d17;
+        }
+    }
+    i {
+        transform: translateY(0%);
+        // background-color: aliceblue;
+        font-size: 2vw;
+        color: #fef481;
+    }
+}
